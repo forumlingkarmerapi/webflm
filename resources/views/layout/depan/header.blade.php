@@ -63,7 +63,7 @@
                                 <nav class="collapse">
                                     <ul class="nav nav-pills" id="mainNav">
                                         <li class="dropdown">
-                                            <a class="dropdown-item dropdown-toggle active" href="index.html">
+                                            <a class="dropdown-item dropdown-toggle active" href="{{ url('/') }}">
                                                 Beranda
                                             </a>
                                         </li>
@@ -72,23 +72,23 @@
                                                 Tentang Kami
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="page-careers.html">Visi dan Misi</a></li>
-                                                <li><a class="dropdown-item" href="page-faq.html">Keanggotaan</a></li>
-                                                <li><a class="dropdown-item" href="page-login.html">Tugas dan Tanggung Jawab</a></li>
+                                                <li><a class="dropdown-item" href="#">Visi dan Misi</a></li>
+                                                <li><a class="dropdown-item" href="#">Keanggotaan</a></li>
+                                                <li><a class="dropdown-item" href="#">Tugas dan Tanggung Jawab</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown">
-                                            <a class="dropdown-item dropdown-toggle" href="index.html">
+                                            <a class="dropdown-item dropdown-toggle" href="#">
                                                 Kegiatan
                                             </a>
                                         </li>
                                         <li class="dropdown">
-                                            <a class="dropdown-item dropdown-toggle" href="index.html">
+                                            <a class="dropdown-item dropdown-toggle" href="#">
                                                 Publikasi
                                             </a>
                                         </li>
                                         <li class="dropdown">
-                                            <a class="dropdown-item dropdown-toggle" href="index.html">
+                                            <a class="dropdown-item dropdown-toggle" href="#">
                                                 Hubungi Kami
                                             </a>
                                         </li>

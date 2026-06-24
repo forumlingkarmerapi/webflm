@@ -2,54 +2,26 @@
 @section('content')
 <div role="main" class="main">
 
-	<div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center show-dots-hover dots-light nav-style-1 nav-inside nav-inside-plus nav-dark nav-lg nav-font-size-lg show-nav-hover mb-0" data-plugin-options="{'autoplayTimeout': 7000}" data-dynamic-height="['700px','700px','700px','550px','500px']" style="height: 700px;">
-		<div class="owl-stage-outer">
-			<div class="owl-stage">
-
-				<!-- Carousel Slide 1 -->
-				<div class="owl-item position-relative overlay overlay-show overlay-op-7" data-dynamic-height="['700px','700px','700px','550px','500px']" style="background-image: url(img/slides/slide-corporate-5-1.jpg); background-size: cover; background-position: center;">
-					<div class="container position-relative z-index-3 h-100">
-						<div class="row justify-content-center align-items-center h-100">
-							<div class="col-lg-7 text-center">
-								<div class="d-flex flex-column align-items-center justify-content-center h-100">
-									<h3 class="position-relative text-color-light text-5 line-height-5 font-weight-medium ls-0 px-4 mb-2 appear-animation" data-appear-animation="fadeInDownShorterPlus" data-plugin-options="{'minWindowWidth': 0}">
-										<span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-7">
-											<img src="{{ asset('depan/img/slides/slide-title-border-light.png') }}" class="w-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
-										</span>
-										HELLO, THIS IS
-										<span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-7">
-											<img src="{{ asset('depan/img/slides/slide-title-border-light.png') }}" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
-										</span>
-									</h3>
-									<h1 class="text-color-light font-weight-extra-bold text-12-5 line-height-3 mb-2 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="500" data-plugin-options="{'minWindowWidth': 0}">FORUM LINGKAR MERAPI</h1>
-									<p class="text-4-5 text-color-light font-weight-light opacity-7 text-center mb-5" data-plugin-animated-letters data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 30}">Kolaborasi, Komunikasi dan Sinergi Wilayah Lingkar Merapi</p>
-									<a href="#" class="btn btn-light btn-outline text-color-light text-color-hover-dark font-weight-bold text-3 btn-px-5 py-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1800" data-plugin-options="{'minWindowWidth': 0}">GEST STARTED NOW!</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Carousel Slide 2 -->
-				<div class="owl-item position-relative overlay overlay-show overlay-op-7" data-dynamic-height="['700px','700px','700px','550px','500px']" style="background-image: url(img/slides/slide-corporate-1-2.jpg); background-size: cover; background-position: center;">
-					<div class="container position-relative z-index-3 h-100">
-						<div class="row justify-content-center align-items-center h-100">
-							<div class="col-lg-7 text-center">
-								<div class="d-flex flex-column align-items-center justify-content-center h-100">
-									<h1 class="text-color-light font-weight-extra-bold text-12-5 line-height-3 mb-2 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="500" data-plugin-options="{'minWindowWidth': 0}">AWESOME FORUM</h1>
-									<p class="text-4-5 text-color-light font-weight-light opacity-7 text-center mb-5" data-plugin-animated-letters data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 30}">Forum Lingkar Merapi</p>
-									<a href="#" class="btn btn-light btn-outline text-color-light text-color-hover-dark font-weight-bold text-3 btn-px-5 py-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2500" data-plugin-options="{'minWindowWidth': 0}">GEST STARTED NOW!</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-		<div class="owl-dots mb-5">
-			<button role="button" class="owl-dot active"><span></span></button>
-			<button role="button" class="owl-dot"><span></span></button>
+	<div class="slider-container rev_slider_wrapper" style="height: 670px;">
+		<div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': 1170, 'gridheight': 670, 'disableProgressBar': 'on', 'responsiveLevels': [4096,1200,992,500], 'parallax': { 'type': 'scroll', 'origo': 'enterpoint', 'speed': 1000, 'levels': [2,3,4,5,6,7,8,9,12,50], 'disable_onmobile': 'on' }, 'navigation' : {'arrows': { 'enable': true }, 'bullets': {'enable': true, 'style': 'bullets-style-1', 'h_align': 'center', 'v_align': 'bottom', 'space': 7, 'v_offset': 70, 'h_offset': 0}}}">
+			<ul>
+				<li data-transition="fade">
+					<img src="{{ asset('uploads/imagesliders/flm-slider.png') }}"  
+						alt=""
+						data-bgposition="center center" 
+						data-bgfit="cover" 
+						data-bgrepeat="no-repeat" 
+						class="rev-slidebg">
+				</li>
+				{{-- <li data-transition="fade">
+					<img src="{{ asset('uploads/imagesliders/flm-slider2.png') }}"  
+						alt=""
+						data-bgposition="center center" 
+						data-bgfit="cover" 
+						data-bgrepeat="no-repeat" 
+						class="rev-slidebg">
+				</li> --}}
+			</ul>
 		</div>
 	</div>
 
@@ -100,7 +72,31 @@
 					<div class="row">
 						<div class="col">
 							<a href="blog-post.html" class="text-decoration-none">
-								<img src="{{ asset('depan/img/blog/blog-corporate-3-1.jpg') }}" class="img-fluid hover-effect-2 mb-3" alt="" />
+								<img src="{{ asset('uploads/berita/flm-16april2026.png') }}" class="img-fluid hover-effect-2 mb-3" alt="" />
+							</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-auto pe-0">
+							<div class="date">
+								<span class="day text-color-dark font-weight-extra-bold">16</span>
+								<span class="month text-1">APR</span>
+							</div>
+						</div>
+						<div class="col ps-1">
+							<h4 class="line-height-3 text-4"><a href="blog-post.html" class="text-dark">Rapat Forum Lingkar Merapi 16 April 2026</a></h4>
+							<p class="line-height-3 pe-4 mb-1" style="font-size: 13px;">Forum Lingkar Merapi melaksanakan rapat dengan pembahasan pemutakhiran informasi aktivitas Gunung Merapi dan pembahasan program kegiatan Forum Lingkar Merapi tahun 2026.</p>
+							<a href="/" class="read-more text-color-primary font-weight-bold text-2">selengkapnya <i class="fas fa-chevron-right text-1 ms-1"></i></a>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+				<article>
+					<div class="row">
+						<div class="col">
+							<a href="blog-post.html" class="text-decoration-none">
+								<img src="{{ asset('uploads/berita/flm-18feb2026.png') }}" class="img-fluid hover-effect-2 mb-3" alt="" />
 							</a>
 						</div>
 					</div>
@@ -112,8 +108,8 @@
 							</div>
 						</div>
 						<div class="col ps-1">
-							<h4 class="line-height-3 text-4"><a href="blog-post.html" class="text-dark">Rapat Forum Lingkar Merapi</a></h4>
-							<p class="line-height-5 pe-4 mb-1">Forum Lingkar Merapi melaksanakan rapat dengan pembahasan pemutakhiran informasi aktivitas Gunung Merapi dan pembahasan program kegiatan Forum Lingkar Merapi tahun 2026.</p>
+							<h4 class="line-height-3 text-4"><a href="blog-post.html" class="text-dark">Rapat Forum Lingkar Merapi 18 April 2026</a></h4>
+							<p class="line-height-3 pe-4 mb-1" style="font-size: 13px;">Forum Lingkar Merapi melaksanakan rapat dengan pembahasan pemutakhiran informasi aktivitas Gunung Merapi dan pembahasan program kegiatan Forum Lingkar Merapi tahun 2026.</p>
 							<a href="/" class="read-more text-color-primary font-weight-bold text-2">selengkapnya <i class="fas fa-chevron-right text-1 ms-1"></i></a>
 						</div>
 					</div>
@@ -124,7 +120,7 @@
 					<div class="row">
 						<div class="col">
 							<a href="blog-post.html" class="text-decoration-none">
-								<img src="{{ asset('depan/img/blog/blog-corporate-3-1.jpg') }}" class="img-fluid hover-effect-2 mb-3" alt="" />
+								<img src="{{ asset('uploads/berita/merapi.png') }}" class="img-fluid hover-effect-2 mb-3" alt="" />
 							</a>
 						</div>
 					</div>
@@ -132,12 +128,12 @@
 						<div class="col-auto pe-0">
 							<div class="date">
 								<span class="day text-color-dark font-weight-extra-bold">30</span>
-								<span class="month text-1">FEB</span>
+								<span class="month text-1">JAN</span>
 							</div>
 						</div>
 						<div class="col ps-1">
 							<h4 class="line-height-3 text-4"><a href="blog-post.html" class="text-dark">Gunung Merapi, Salah Satu Gunung Api Paling Aktif di Dunia</a></h4>
-							<p class="line-height-5 pe-4 mb-1">Sebagai salah satu gunung api paling aktif, tentunya akan sangat menarik jika kita menilik sejarah Gunung Merapi.</p>
+							<p class="line-height-3 pe-4 mb-1" style="font-size: 13px;">Sebagai salah satu gunung api paling aktif, tentunya akan sangat menarik jika kita menilik sejarah Gunung Merapi.</p>
 							<a href="/" class="read-more text-color-primary font-weight-bold text-2">selengkapnya <i class="fas fa-chevron-right text-1 ms-1"></i></a>
 						</div>
 					</div>
@@ -148,7 +144,7 @@
 					<div class="row">
 						<div class="col">
 							<a href="blog-post.html" class="text-decoration-none">
-								<img src="{{ asset('depan/img/blog/blog-corporate-3-1.jpg') }}" class="img-fluid hover-effect-2 mb-3" alt="" />
+								<img src="{{ asset('uploads/berita/merapi-erupsi.png') }}" class="img-fluid hover-effect-2 mb-3" alt="" />
 							</a>
 						</div>
 					</div>
@@ -161,31 +157,7 @@
 						</div>
 						<div class="col ps-1">
 							<h4 class="line-height-3 text-4"><a href="blog-post.html" class="text-dark">Sejarah Letusan Gunung Merapi Berdasarkan Fasies Gunung Api</a></h4>
-							<p class="line-height-5 pe-4 mb-1">Fasies Gunungapi Merapi yang terletak di DAS Bedog Propinsi Daerah Istimewa Yogyakarta dan bahaya gunungapi yang diakibatkan oleh erupsi Gunungapi Merapi berdasarkan pada fasies gunungapinya.</p>
-							<a href="/" class="read-more text-color-primary font-weight-bold text-2">selengkapnya <i class="fas fa-chevron-right text-1 ms-1"></i></a>
-						</div>
-					</div>
-				</article>
-			</div>
-			<div class="col-md-6 col-lg-3">
-				<article>
-					<div class="row">
-						<div class="col">
-							<a href="blog-post.html" class="text-decoration-none">
-								<img src="{{ asset('depan/img/blog/blog-corporate-3-1.jpg') }}" class="img-fluid hover-effect-2 mb-3" alt="" />
-							</a>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-auto pe-0">
-							<div class="date">
-								<span class="day text-color-dark font-weight-extra-bold">9</span>
-								<span class="month text-1">JAN</span>
-							</div>
-						</div>
-						<div class="col ps-1">
-							<h4 class="line-height-3 text-4"><a href="blog-post.html" class="text-dark">Gunung Merapi: Sejarah Panjang, Mitologi, dan Wisata Alam</a></h4>
-							<p class="line-height-5 pe-4 mb-1">Gunung Merapi adalah gunung dengan ketinggian puncak sekitar 2.930 mdpl, yang terletak diwilayah Pulau Jawa khususnya Provinsi Daerah Istimewa Yogyakarta.</p>
+							<p class="line-height-3 pe-4 mb-1" style="font-size: 13px;">Fasies Gunungapi Merapi yang terletak di DAS Bedog Propinsi Daerah Istimewa Yogyakarta dan bahaya gunungapi yang diakibatkan oleh erupsi Gunungapi Merapi berdasarkan pada fasies gunungapinya.</p>
 							<a href="/" class="read-more text-color-primary font-weight-bold text-2">selengkapnya <i class="fas fa-chevron-right text-1 ms-1"></i></a>
 						</div>
 					</div>
@@ -194,21 +166,26 @@
 		</div>
 	</div>
 
-	<section class="section bg-color-grey section-height-3 border-0 m-0">
+	<section class="section bg-color-grey-- section-height-3 border-0 m-0" style="background-color: #0E3367 !important;">
 		<div class="container pb-2">
 			<div class="row">
 				<div class="col-lg-5 text-center text-md-start mb-5 mb-lg-0">
-					<h2 class="text-color-dark font-weight-normal text-6 mb-2">Publikasi <strong class="font-weight-extra-bold text-color-primary">Terkini</strong></h2>
-					<p class="lead">Temukan tulisan, buletin, dokumentasi yang terkait dengan Gunung Merapi disini.</p>
+					<h2 class="text-color-light font-weight-normal text-6 mb-2">Publikasi <strong class="font-weight-extra-bold text-color-light">Terkini</strong></h2>
+					<p class="lead" style="color: #D3E3FD !important;">Temukan tulisan, buletin, dokumentasi yang terkait dengan Gunung Merapi disini.</p>
 					<a href="#" class="btn btn-primary font-weight-semibold btn-px-4 btn-py-2 text-2">Selengkapnya</a>
 				</div>
 				<div class="col-md-7 order-2 order-md-1 text-center text-md-start">
 					<div class="owl-carousel owl-theme nav-style-1 nav-center-images-only stage-margin mb-0" data-plugin-options="{'responsive': {'576': {'items': 1}, '768': {'items': 1}, '992': {'items': 2}, '1200': {'items': 2}}, 'margin': 25, 'loop': false, 'nav': true, 'dots': false, 'stagePadding': 40}">
-						@for ($i = 0; $i < 4; $i++)
-							<a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalku" onclick="showFormRead()">
-								<img class="img-fluid rounded-0 mb-2" src="{{ asset('depan/img/team/team-1.jpg') }}" alt="" />
-								<p class="text-2 mb-0 lineheight-17 ratatengah warna-putih" style="text-align: center !important;">
-									Buletin Merapi Edisi {{ $i+1 }}
+						@for ($i = 0; $i < 3; $i++)
+							@php
+							$cover = "uploads/publikasi/cover/2025-buletin-edisi".$i+1;
+							$filename = "uploads/publikasi/2025-buletin-edisi".$i+1;
+							@endphp
+							{{-- <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalku" onclick="showFormRead()" style="text-decoration: none;"> --}}
+							<a href="{{ asset($filename.'.pdf') }}" target="_blank" style="text-decoration: none;">
+								<img class="img-fluid rounded-0 mb-2" src="{{ asset($cover.".png") }}" alt="" />
+								<p class="text-2 mb-0 lineheight-17 ratatengah warna-putih" style="color: #0E3350;text-align: center !important;">
+									Buletin Merapi Edisi {{ $i+1 }} Tahun 2025
 									{{-- {{ $prokumden->judul_publikasi }} --}}
 									{{-- <a href="javascript:void(0)" class="btn btn-primary btn-sm mb-2">
 										Selengkapnya
