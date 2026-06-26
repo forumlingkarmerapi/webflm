@@ -47,7 +47,7 @@
                 </li>  
                 
                 <li data-username="Form Validation" class="nav-item">
-					<a href="{{ url('/dap/pengguna/gantipassword') }}" class="nav-link">
+					<a href="{{ url('/dap/imageslider') }}" class="nav-link">
 						<span class="pcoded-micon"><i class="feather icon-check-circle"></i></span><span class="pcoded-mtext">Image Slider</span>
 					</a>
 				</li>
