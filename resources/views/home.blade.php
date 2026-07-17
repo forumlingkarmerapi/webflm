@@ -93,7 +93,7 @@
 						<div class="row">
 							<div class="col">
 								<a href="#" class="text-decoration-none">
-									<img src="{{ asset('uploads/berita/'.$news->gambar) }}" class="img-fluid hover-effect-2 mb-3" alt="" />
+									<img src="{{ asset('uploads/berita/'.$news->gambar) }}" style="border-radius: 5%;" class="img-fluid hover-effect-2 mb-3" alt="" />
 								</a>
 							</div>
 						</div>
