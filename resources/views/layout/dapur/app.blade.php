@@ -21,7 +21,7 @@
 	<link href="{{ asset('mainpro/select2/css/select2.css') }}" rel="stylesheet">
 	<link href="{{ asset('mainpro/css/style.css') }}" rel="stylesheet">
 	<link href="{{ asset('mainpro/simple-line-icons/css/simple-line-icons.min.css') }}" rel="stylesheet">
-	<link href="{{ asset('depan/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+	<link href="{{ asset('theme/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
 
 	<script src="{{ asset('mainpro/js/plugins/jquery-3.4.1.min.js') }}"></script>
 	<script src="{{ asset('mainpro/js/vendor-all.min.js') }}"></script>
