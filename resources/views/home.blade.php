@@ -155,10 +155,6 @@
 								<img class="img-fluid rounded-0 mb-2" src="{{ asset($cover) }}" alt="" />
 								<p class="text-2 mb-0 lineheight-17 ratatengah warna-putih" style="color: #0E3350;text-align: center !important;">
 									{{ $pub->judul_publikasi }}
-									{{-- {{ $prokumden->judul_publikasi }} --}}
-									{{-- <a href="javascript:void(0)" class="btn btn-primary btn-sm mb-2">
-										Selengkapnya
-									</a> --}}
 								</p>
 							</a>
 						@endforeach

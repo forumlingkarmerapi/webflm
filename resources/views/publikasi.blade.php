@@ -38,11 +38,15 @@
                             <div class="row mb-3">
                                 <div class="col-lg-5">
                                     <div class="post-image">
-                                        <a href="{{ url('/publikasi', $pub->id_publikasi) }}">
+                                        @php
+                                        $cover = "uploads/publikasi/cover/".$pub->gambar_sampul;
+                                        $filename = "uploads/publikasi/".$pub->berkas;
+                                        @endphp
+                                        <a href="{{ asset($filename) }}" target="_blank" style="text-decoration: none;">
                                             @if ($pub->gambar_sampul != '')
                                             <img src="{{asset('uploads/publikasi/cover/'.$pub->gambar_sampul)}}" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />    
                                             @else
-                                            <img src="{{asset('uploads/logo/logoden-default.jpg')}}" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="">
+                                            <img src="{{asset('logo/logoflm.png')}}" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="">
                                             @endif
                                             {{-- <img src="{{asset('uploads/berita/'.$brt->gambar)}}" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" /> --}}
                                         </a>
@@ -51,13 +55,13 @@
                                 <div class="col-lg-7">
                                     <div class="post-content">
                                         <h2 class="font-weight-semibold pt-4 pt-lg-0 text-5 line-height-4 mb-2">
-                                            <a href="{{ url('/publikasi', $pub->id_publikasi) }}" class="tautanku1">{{ $pub->judul_publikasi }}</a>
+                                            <a href=""{{ asset($filename) }}" class="tautanku1">{{ $pub->judul_publikasi }}</a>
                                         </h2>
                                         <div class="post-meta lineheight-15">
                                             <i class="far fa-calendar-alt"></i> <span>{{ App\Helpers\Gudangfungsi::tanggalindo_hari($pub->tanggal_publikasi) }} </span>
                                             {{-- <span><a href="{{ url('/berita-kategori/'.$brt->kategori_slug) }}" class="tautanku2"><i class="far fa-folder"></i> {{ $pub->kategori_berita }}</a> </span> --}}
                                         </div>
-                                        @php echo substr($pub->judul_publikasi, 0, 1000); @endphp
+                                        @php echo substr($pub->deskripsi, 0, 1000); @endphp
                                     </div>
                                 </div>
                             </div>

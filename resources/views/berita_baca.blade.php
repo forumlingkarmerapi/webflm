@@ -28,9 +28,7 @@
                 <div class="blog-posts single-post">
                     <article class="post post-large blog-single-post border-0 m-0 p-0">
                         <div class="post-image ms-0">
-                            <a href="blog-post.html">
-                                <img src="{{asset('uploads/berita/'.$berita->gambar)}}" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
-                            </a>
+                            <img src="{{asset('uploads/berita/'.$berita->gambar)}}" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
                         </div>
 
                         <div class="post-date ms-0">

@@ -42,7 +42,7 @@
                                             @if ($brt->gambar != '')
                                             <img src="{{asset('uploads/berita/'.$brt->gambar)}}" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />    
                                             @else
-                                            <img src="{{asset('uploads/logo/logoden-default.jpg')}}" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="">
+                                            <img src="{{asset('logo/logoflm.png')}}" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="">
                                             @endif
                                             {{-- <img src="{{asset('uploads/berita/'.$brt->gambar)}}" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" /> --}}
                                         </a>
