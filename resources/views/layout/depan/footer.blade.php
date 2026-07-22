@@ -24,10 +24,10 @@
                     </div>
                     <div class="col-md-6">
                         <ul class="list list-icons list-icons-sm">
-                            <li><i class="fas fa-angle-right"></i><a href="#" class="link-hover-style-1 ms-1"> Beranda</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="{{ url('/') }}" class="link-hover-style-1 ms-1"> Beranda</a></li>
                             <li><i class="fas fa-angle-right"></i><a href="#" class="link-hover-style-1 ms-1"> Tentang Kami</a></li>
-                            <li><i class="fas fa-angle-right"></i><a href="#" class="link-hover-style-1 ms-1"> Kegiatan</a></li>
-                            <li><i class="fas fa-angle-right"></i><a href="#" class="link-hover-style-1 ms-1"> Publikasi</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="{{ url('/berita') }}" class="link-hover-style-1 ms-1"> Kegiatan</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="{{ url('/publikasi') }}" class="link-hover-style-1 ms-1"> Publikasi</a></li>
                             <li><i class="fas fa-angle-right"></i><a href="#" class="link-hover-style-1 ms-1"> Hubungi Kami</a></li>
                         </ul>
                     </div>

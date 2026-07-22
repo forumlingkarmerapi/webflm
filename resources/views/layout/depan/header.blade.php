@@ -50,7 +50,7 @@
                 <div class="header-column">
                     <div class="header-row">
                         <div class="header-logo">
-                            <a href="index.html">
+                            <a href="{{ url('/') }}">
                                 <img alt="FLM" width="80" data-sticky-width="70" src="{{ asset('logoflm.png') }}">
                             </a>
                         </div>
@@ -78,12 +78,12 @@
                                             </ul>
                                         </li>
                                         <li class="dropdown">
-                                            <a class="dropdown-item dropdown-toggle" href="#">
-                                                Kegiatan
+                                            <a class="dropdown-item dropdown-toggle" href="{{ url('/berita') }}">
+                                                Berita
                                             </a>
                                         </li>
                                         <li class="dropdown">
-                                            <a class="dropdown-item dropdown-toggle" href="#">
+                                            <a class="dropdown-item dropdown-toggle" href="{{ url('/publikasi') }}">
                                                 Publikasi
                                             </a>
                                         </li>

@@ -14,7 +14,9 @@ use App\Http\Controllers\dapur\PenggunaController;
 
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/indeks', [HomeController::class, 'indeks']);
+Route::get('/berita', [HomeController::class, 'berita']);
+Route::get('/beritabaca/{slug}', [HomeController::class, 'berita_baca']);
+Route::get('/publikasi', [HomeController::class, 'publikasi']);
 Route::get('/manage', [LoginController::class, 'index'])->name('manage');
 Route::post('/loginprocess', [LoginController::class, 'authenticate']);
 

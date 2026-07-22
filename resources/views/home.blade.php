@@ -83,7 +83,11 @@
 	<div class="container">
 		<div class="row pt-5 mt-4">
 			<div class="col">
-				<h2 class="font-weight-normal text-6 mb-4"><strong class="font-weight-extra-bold text-color-primary">Postingan</strong> Terbaru</h2>
+				<a href="{{ url('/berita') }}" style="text-decoration: none">
+					<h2 class="font-weight-normal text-6 mb-4">
+					<strong class="font-weight-extra-bold text-color-primary">Postingan</strong> Terbaru
+				</h2>
+				</a>
 			</div>
 		</div>
 		<div class="row recent-posts pb-5 mb-4">
@@ -92,7 +96,7 @@
 					<article>
 						<div class="row">
 							<div class="col">
-								<a href="#" class="text-decoration-none">
+								<a href="{{ url('/beritabaca/'.$news->slug) }}" class="text-decoration-none">
 									<img src="{{ asset('uploads/berita/'.$news->gambar) }}"
 									style="border-radius: 10px;
 										  height:120px;
@@ -114,7 +118,9 @@
 								<p class="text-2 text-primary" style="margin-bottom: 2px;">
                                     <i class="fa fa-calendar"></i> {{ App\Helpers\Gudangfungsi::tanggalindo_hari($news->tanggal_publikasi) }}
                                 </p>
-								<h4 class="line-height-3 text-4"><a href="#" class="text-primary">{{ $news->judul }}</a></h4>
+								<h4 class="line-height-3 text-4">
+									<a href="{{ url('/beritabaca/'.$news->slug) }}" class="text-primary">{{ $news->judul }}</a>
+								</h4>
 								<p class="line-height-2 pe-4 mb-1" style="font-size: 10px !important;">
 									@php echo Str::limit($news->isi_berita, 100); @endphp
 								</p>
@@ -133,7 +139,9 @@
 				<div class="col-lg-5 text-center text-md-start mb-5 mb-lg-0">
 					<h2 class="text-color-light font-weight-normal text-6 mb-2">Publikasi <strong class="font-weight-extra-bold text-color-light">Terkini</strong></h2>
 					<p class="lead" style="color: #D3E3FD !important;">Temukan tulisan, buletin, dokumentasi yang terkait dengan Gunung Merapi disini.</p>
-					<a href="#" class="btn btn-primary font-weight-semibold btn-px-4 btn-py-2 text-2">Selengkapnya</a>
+					<a href="{{ url('/publikasi') }}" class="btn btn-primary font-weight-semibold btn-px-4 btn-py-2 text-2">
+						Selengkapnya
+					</a>
 				</div>
 				<div class="col-md-7 order-2 order-md-1 text-center text-md-start">
 					<div class="owl-carousel owl-theme nav-style-1 nav-center-images-only stage-margin mb-0" data-plugin-options="{'responsive': {'576': {'items': 1}, '768': {'items': 1}, '992': {'items': 2}, '1200': {'items': 2}}, 'margin': 25, 'loop': false, 'nav': true, 'dots': false, 'stagePadding': 40}">
